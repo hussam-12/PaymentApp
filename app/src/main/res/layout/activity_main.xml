@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/AppName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/payment_app"
+        android:autofillHints="Payment App"
+        android:inputType="text"
+        android:text="@string/calculating_payroll"
+
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <EditText
+        android:id="@+id/noOfHour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/number_of_hours"
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        />
+    <EditText
+        android:id="@+id/hourlyRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/hourly_rate"
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noOfHour"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <EditText
+        android:id="@+id/taxRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/tax_rate"
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourlyRate"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <EditText
+        android:id="@+id/pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/pay"
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taxRate"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <EditText
+        android:id="@+id/overtimePay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/overtime_pay"
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <EditText
+        android:id="@+id/totalPay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/total_pay"
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/overtimePay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <EditText
+        android:id="@+id/tax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/tax"
+
+        android:inputType="number"
+        android:text=""
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/totalPay"
+        app:layout_constraintEnd_toEndOf="@+id/AppName"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <Button
+        android:id="@+id/About"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+
+        app:layout_constraintTop_toBottomOf="@id/tax"
+        app:layout_constraintEnd_toStartOf="@id/Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+
+        app:layout_constraintTop_toBottomOf="@id/tax"
+        app:layout_constraintStart_toEndOf="@id/About"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

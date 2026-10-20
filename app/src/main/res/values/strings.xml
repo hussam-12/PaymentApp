@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PaymentApp</string>
+    <string name="payment_app">Payment App</string>
+    <string name="calculating_payroll">Calculating Payroll</string>
+    <string name="number_of_hours">Number of Hours</string>
+    <string name="hourly_rate">Hourly rate</string>
+    <string name="tax_rate">Tax rate</string>
+    <string name="pay">pay</string>
+    <string name="overtime_pay">Overtime PAy</string>
+    <string name="total_pay">Total Pay</string>
+    <string name="tax">Tax</string>
+    <string name="mohamed_hussam_tatri">Mohamed Hussam Tatri</string>
+    <string name="_101571126">101571126</string>
+    <string name="calculate">Calculate</string>
+    <string name="about">About</string>
+</resources>
